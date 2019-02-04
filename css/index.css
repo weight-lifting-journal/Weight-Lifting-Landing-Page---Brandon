@@ -199,3 +199,13 @@ header p {
   transform: translateY(-2px);
   transition: 0.4s;
 }
+footer {
+  background: #262636;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+footer i {
+  margin-right: 10px;
+}
