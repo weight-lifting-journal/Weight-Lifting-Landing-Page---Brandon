@@ -6,7 +6,8 @@ modalBtn.onclick = () => {
   modal.style.display = "block";
 };
 
-modalCloseBtn.onclick = () => {
+modalCloseBtn.onclick = e => {
+  e.preventDefault();
   modal.style.display = "none";
 };
 

@@ -20,13 +20,25 @@ h6 {
 p {
   font-size: 1.4rem;
 }
+nav {
+  position: sticky;
+  top: 0;
+  height: 7vh;
+  padding: 0 3%;
+  background: #2a2b3c;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  color: white;
+  font-size: 2.4rem;
+}
 .menu-icon {
   font-size: 2.8rem;
   color: white;
   cursor: pointer;
-  position: absolute;
-  right: 30px;
-  top: 20px;
 }
 .nav-container {
   display: none;
