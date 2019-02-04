@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="css/index.css" />
 
-    <title>Rep Logger</title>
+    <title>Fit Me</title>
   </head>
   <body>
     <div class="container">
@@ -29,18 +29,21 @@
           <div class="nav-container-content">
             <a href="#" class="close-menu"><i class="fas fa-times"></i></a>
             <div class="nav-list">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" id="homeBtn" href="#home">Home</a>
               <a class="nav-link" href="#">Log In</a>
               <a class="nav-link" href="#">Sign Up</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Testimonials</a>
+              <a class="nav-link" id="featuresBtn" href="#features">Features</a>
+              <a class="nav-link" id="testimonialsBtn" href="#testimonials"
+                >Testimonials</a
+              >
+              <a class="nav-link" id="contactBtn" href="#contact">Contact Us</a>
             </div>
           </div>
         </div>
       </nav>
       <!--End navigation-->
       <!--Header-->
-      <header>
+      <header id="home">
         <h1>Fit Me</h1>
         <p>A smart workout tracking solution to fit your lifestyle.</p>
       </header>
@@ -60,7 +63,7 @@
       </section>
       <!--End about-->
       <!--Features section-->
-      <div class="features">
+      <div class="features" id="features">
         <h2>Check out our features</h2>
         <div class="feature">
           <div class="feature-heading">
@@ -121,7 +124,7 @@
       </div>
       <!--End features-->
       <!--Testimonials section-->
-      <section class="testimonials">
+      <section class="testimonials" id="testimonials">
         <h2>Testimonials</h2>
         <div class="testimonial">
           <img src="./images/testimonial1.jpeg" alt="First testimonial" />
@@ -150,8 +153,9 @@
       </section>
       <!--End testimonials-->
       <!--Contact section-->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact-form">
+          <h2>Contact Us</h2>
           <p>Name</p>
           <input type="text" name="email" id="name" class="contact-field" />
           <p>Email</p>
@@ -169,9 +173,17 @@
       </section>
       <!--End contact-->
       <!--Footer section-->
-      <footer><i class="far fa-copyright"></i> Copyright, Fit Me 2019</footer>
+      <footer>
+        <i class="far fa-copyright"></i>Fit Me 2019, All rights reserved.
+      </footer>
       <!--End footer-->
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
