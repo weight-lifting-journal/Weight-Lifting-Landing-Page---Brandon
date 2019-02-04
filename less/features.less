@@ -1,0 +1,35 @@
+.features {
+  background-color: @secondary-color;
+  padding: 80px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 95%);
+
+  .feature {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    .feature-heading {
+      display: flex;
+      align-items: baseline;
+
+      i {
+        font-size: 2.4rem;
+        margin-right: 20px;
+      }
+
+      h3 {
+        margin: 0;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}

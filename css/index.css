@@ -1,12 +1,13 @@
 body {
   background: darkslateblue;
   font-size: 62.5%;
+  color: white;
 }
 h1 {
   font-size: 3.6rem;
 }
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 h3 {
   font-size: 1.8rem;
@@ -87,5 +88,52 @@ header h1 {
 header p {
   color: white;
   font-size: 1.4rem;
-  padding: 50px;
+  padding: 40px;
+}
+.about {
+  padding: 30px;
+  color: white;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about p {
+  font-size: 1.4rem;
+}
+@media (min-width: 700px) {
+  .about {
+    height: 400px;
+  }
+}
+.features {
+  background-color: #2e2f42;
+  padding: 80px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 95%);
+}
+.features .feature {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.features .feature .feature-heading {
+  display: flex;
+  align-items: baseline;
+}
+.features .feature .feature-heading i {
+  font-size: 2.4rem;
+  margin-right: 20px;
+}
+.features .feature .feature-heading h3 {
+  margin: 0;
+}
+.features .feature p {
+  font-size: 1.4rem;
 }
