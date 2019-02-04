@@ -20,6 +20,7 @@ p {
 .menu-icon {
   font-size: 2.8rem;
   color: white;
+  cursor: pointer;
   position: absolute;
   right: 30px;
   top: 20px;
@@ -38,9 +39,9 @@ p {
 }
 .nav-container .nav-container-content {
   border-radius: 5px;
-  background-color: darkslategray;
+  background-color: #2e2f42;
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
-  margin: 50% auto;
+  margin: 15% auto;
   padding: 20px;
   width: 50%;
   max-width: 500px;
@@ -64,6 +65,27 @@ p {
 .nav-container .nav-container-content a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
   font-size: 1.6rem;
   margin-bottom: 15px;
+}
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/header-background.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+  color: white;
+}
+header p {
+  color: white;
+  font-size: 1.4rem;
+  padding: 50px;
 }
