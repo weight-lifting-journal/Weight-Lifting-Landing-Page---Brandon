@@ -22,18 +22,24 @@ p {
 }
 .js-wp-1,
 .js-wp-2,
-.js-wp-3 {
+.js-wp-3,
+.js-wp-4 {
   -webkit-animation-duration: 1s;
   animation-duration: 1.4s;
   opacity: 0;
 }
-.js-wp-4 {
+.js-wp-3 {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
+.js-wp-4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1.4s;
+}
 .js-wp-1.animated,
 .js-wp-2.animated,
-.js-wp-3.animated {
+.js-wp-3.animated,
+.js-wp-4.animated {
   opacity: 1;
 }
 nav {
