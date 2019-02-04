@@ -163,3 +163,39 @@ header p {
   max-height: 200px;
   margin-bottom: 20px;
 }
+.contact {
+  background: #2e2f42;
+  clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 60px 30px;
+}
+.contact .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contact-form .contact-field {
+  background-color: #383a51;
+  border: none;
+  border-radius: 5px;
+  min-width: 60%;
+  min-height: 25px;
+  margin-bottom: 10px;
+}
+.contact .contact-form a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 20px;
+  min-width: 60%;
+  padding: 10px 0;
+  text-align: center;
+  transition: 0.4s;
+}
+.contact .contact-form a:hover {
+  background-color: #383a51;
+  transform: translateY(-2px);
+  transition: 0.4s;
+}
