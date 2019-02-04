@@ -14,9 +14,11 @@ h3 {
 }
 h4,
 h5,
-h6,
-p {
+h6 {
   font-size: 1.6rem;
+}
+p {
+  font-size: 1.4rem;
 }
 .menu-icon {
   font-size: 2.8rem;
@@ -136,4 +138,28 @@ header p {
 }
 .features .feature p {
   font-size: 1.4rem;
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.testimonials h2 {
+  margin-bottom: 60px;
+}
+.testimonials .testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.testimonials .testimonial img {
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  max-width: 80%;
+  max-height: 200px;
+  margin-bottom: 20px;
 }
