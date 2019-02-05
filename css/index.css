@@ -322,6 +322,9 @@ header p {
   transform: translateY(-2px);
   transition: 0.4s;
 }
+.contact .contact-form textarea {
+  max-width: 95%;
+}
 footer {
   background: #262636;
   display: flex;
