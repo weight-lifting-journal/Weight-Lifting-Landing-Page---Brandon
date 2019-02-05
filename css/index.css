@@ -28,6 +28,9 @@ p {
   animation-duration: 1.4s;
   opacity: 0;
 }
+.js-wp-1 {
+  animation-duration: 2s;
+}
 .js-wp-3 {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -167,6 +170,17 @@ header p {
   align-items: center;
   clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 95%);
 }
+@media (min-width: 1100px) {
+  .features .features-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .features .features-container h2 {
+    width: 100%;
+  }
+}
 .features h2 {
   text-align: center;
 }
@@ -176,6 +190,11 @@ header p {
   flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 30px;
+}
+@media (min-width: 1100px) {
+  .features .feature {
+    width: 45%;
+  }
 }
 .features .feature .feature-heading {
   display: flex;
