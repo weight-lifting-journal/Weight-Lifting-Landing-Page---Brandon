@@ -1,0 +1,40 @@
+.contact {
+  background: @secondary-color;
+  clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 60px 30px;
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .contact-field {
+      background-color: lighten(@secondary-color, 5%);
+      border: none;
+      border-radius: 5px;
+      min-width: 60%;
+      min-height: 25px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: @text-small;
+      border: 1px solid white;
+      border-radius: 5px;
+      margin-top: 20px;
+      min-width: 60%;
+      padding: 10px 0;
+      text-align: center;
+      transition: 0.4s;
+
+      &:hover {
+        background-color: lighten(@secondary-color, 5%);
+        transform: translateY(-2px);
+        transition: 0.4s;
+      }
+    }
+  }
+}
