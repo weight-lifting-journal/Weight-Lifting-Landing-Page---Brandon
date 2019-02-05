@@ -1,7 +1,7 @@
 /*Scroll on Nav*/
 $('a[href*="#"]').on("click", function(e) {
   e.preventDefault();
-
+  $(".nav-container").css("display", "none");
   $("html, body").animate(
     {
       scrollTop: $($(this).attr("href")).offset().top

@@ -7,12 +7,33 @@
   align-items: center;
   clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 95%);
 
+  .features-container {
+    @media (min-width: 1100px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      h2 {
+        width: 100%;
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
   .feature {
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 30px;
+
+    @media (min-width: 1100px) {
+      width: 45%;
+    }
 
     .feature-heading {
       display: flex;

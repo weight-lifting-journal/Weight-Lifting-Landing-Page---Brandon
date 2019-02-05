@@ -1,5 +1,9 @@
 .contact {
-  background: @secondary-color;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/contact-background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
   padding: 60px 30px;
 
@@ -9,13 +13,25 @@
     align-items: center;
     flex-direction: column;
 
+    p {
+      margin-bottom: 5px;
+    }
+
     .contact-field {
-      background-color: lighten(@secondary-color, 5%);
+      opacity: 0.8;
+      font-size: @text-normal;
       border: none;
       border-radius: 5px;
       min-width: 60%;
       min-height: 25px;
       margin-bottom: 10px;
+      padding: 0 1rem;
+
+      &:focus {
+        opacity: 0.8;
+        border: 2px @secondary-color;
+        box-shadow: 0 0 0 1px @secondary-color;
+      }
     }
 
     a {
