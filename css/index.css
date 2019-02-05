@@ -223,6 +223,9 @@ header p {
   align-items: center;
   flex-direction: column;
 }
+.contact .contact-form p {
+  margin-bottom: 5px;
+}
 .contact .contact-form .contact-field {
   background-color: #383a51;
   border: none;
