@@ -1,16 +1,34 @@
 .contact {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url("../images/contact-background.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/contact-background.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
   padding: 60px 30px;
 
   .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     p {
@@ -30,6 +48,7 @@
       &:focus {
         opacity: 0.8;
         border: 2px @secondary-color;
+        -webkit-box-shadow: 0 0 0 1px @secondary-color;
         box-shadow: 0 0 0 1px @secondary-color;
       }
     }
@@ -44,11 +63,14 @@
       min-width: 60%;
       padding: 10px 0;
       text-align: center;
+      -webkit-transition: 0.4s;
       transition: 0.4s;
 
       &:hover {
         background-color: lighten(@secondary-color, 5%);
+        -webkit-transform: translateY(-2px);
         transform: translateY(-2px);
+        -webkit-transition: 0.4s;
         transition: 0.4s;
       }
     }

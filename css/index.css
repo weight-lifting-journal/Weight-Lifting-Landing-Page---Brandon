@@ -30,6 +30,7 @@ p {
   opacity: 0;
 }
 .js-wp-1 {
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 .js-wp-3 {
@@ -47,14 +48,21 @@ p {
   opacity: 1;
 }
 nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 60px;
   padding: 0 3%;
   background: #2a2b3c;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 nav .logo {
@@ -82,15 +90,25 @@ nav .logo {
 .nav-container .nav-container-content {
   border-radius: 5px;
   background-color: #2e2f42;
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
   margin: 0 auto;
   margin-top: 50%;
   padding: 20px;
   width: 50%;
   max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 @media (min-width: 720px) {
@@ -99,23 +117,35 @@ nav .logo {
   }
 }
 .nav-container .nav-container-content .close-menu {
+  -ms-flex-item-align: end;
   align-self: flex-end;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 .nav-container .nav-container-content .close-menu:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
   color: #d9d9d9;
 }
 .nav-container .nav-container-content .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .nav-container .nav-container-content .nav-list .nav-link {
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 .nav-container .nav-container-content .nav-list .nav-link:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
   color: #d9d9d9;
 }
@@ -128,13 +158,23 @@ nav .logo {
 }
 header {
   height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/header-background.jpeg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/header-background.jpeg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 header h1 {
@@ -152,9 +192,18 @@ header p {
   padding: 30px;
   color: white;
   max-height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .about p {
@@ -168,17 +217,35 @@ header p {
 .features {
   background-color: #2e2f42;
   padding: 80px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 95%);
   clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 95%);
 }
 @media (min-width: 1100px) {
   .features .features-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
   .features .features-container h2 {
@@ -189,9 +256,17 @@ header p {
   text-align: center;
 }
 .features .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
@@ -201,7 +276,11 @@ header p {
   }
 }
 .features .feature .feature-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
 }
 .features .feature .feature-heading i {
@@ -215,16 +294,31 @@ header p {
   font-size: 1.4rem;
 }
 .testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 30px;
 }
 @media (min-width: 800px) {
   .testimonials {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
@@ -238,9 +332,18 @@ header p {
   }
 }
 .testimonials .testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 40px;
 }
@@ -256,6 +359,7 @@ header p {
   }
 }
 .testimonials .testimonial img {
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
   border-radius: 50%;
   max-width: 80%;
@@ -274,17 +378,28 @@ header p {
   }
 }
 .contact {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/contact-background.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/contact-background.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
   padding: 60px 30px;
 }
 .contact .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .contact .contact-form p {
@@ -303,6 +418,7 @@ header p {
 .contact .contact-form .contact-field:focus {
   opacity: 0.8;
   border: 2px #2e2f42;
+  -webkit-box-shadow: 0 0 0 1px #2e2f42;
   box-shadow: 0 0 0 1px #2e2f42;
 }
 .contact .contact-form a {
@@ -315,11 +431,14 @@ header p {
   min-width: 60%;
   padding: 10px 0;
   text-align: center;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 .contact .contact-form a:hover {
   background-color: #383a51;
+  -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 .contact .contact-form textarea {
@@ -327,8 +446,14 @@ header p {
 }
 footer {
   background: #262636;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 50px;
   font-size: 1.2rem;
