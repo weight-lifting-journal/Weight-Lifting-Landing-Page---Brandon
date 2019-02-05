@@ -274,7 +274,10 @@ header p {
   }
 }
 .contact {
-  background: #2e2f42;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/contact-background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
   padding: 60px 30px;
 }
@@ -288,12 +291,19 @@ header p {
   margin-bottom: 5px;
 }
 .contact .contact-form .contact-field {
-  background-color: #383a51;
+  opacity: 0.8;
+  font-size: 1.6rem;
   border: none;
   border-radius: 5px;
   min-width: 60%;
   min-height: 25px;
   margin-bottom: 10px;
+  padding: 0 1rem;
+}
+.contact .contact-form .contact-field:focus {
+  opacity: 0.8;
+  border: 2px #2e2f42;
+  box-shadow: 0 0 0 1px #2e2f42;
 }
 .contact .contact-form a {
   text-decoration: none;
