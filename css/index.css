@@ -24,6 +24,26 @@ h6 {
 p {
   font-size: 1.4rem;
 }
+.btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 20px;
+  min-width: 60%;
+  padding: 10px 0;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: #383a51;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
 .js-wp-1,
 .js-wp-2,
 .js-wp-3,
@@ -194,10 +214,37 @@ header.about p {
   font-size: 1.4rem;
   padding: 0 30px;
 }
+header.home .cta-buttons,
+header.about .cta-buttons {
+  margin-top: 20px;
+}
+header.home .log-in-btn,
+header.about .log-in-btn,
+header.home .sign-up-btn,
+header.about .sign-up-btn {
+  padding: 10px 30px;
+  margin: 20px;
+}
+header.home .sign-up-btn,
+header.about .sign-up-btn {
+  background-color: #2e2f42;
+}
+header.home .sign-up-btn:hover,
+header.about .sign-up-btn:hover {
+  background-color: white;
+  color: #2e2f42;
+}
+header.home .log-in-btn:hover,
+header.about .log-in-btn:hover {
+  background-color: white;
+  color: #2e2f42;
+}
 header.about {
   height: 50vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/about-background.jpeg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/about-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about {
   padding: 30px;
@@ -432,26 +479,6 @@ header.about {
   -webkit-box-shadow: 0 0 0 1px #2e2f42;
   box-shadow: 0 0 0 1px #2e2f42;
 }
-.contact .contact-form a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.4rem;
-  border: 1px solid white;
-  border-radius: 5px;
-  margin-top: 20px;
-  min-width: 60%;
-  padding: 10px 0;
-  text-align: center;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.contact .contact-form a:hover {
-  background-color: #383a51;
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
 .contact .contact-form textarea {
   max-width: 95%;
 }
@@ -481,7 +508,7 @@ footer i {
   padding: 0 2%;
 }
 .team .team-member {
-  margin: 20px 50px;
+  margin: 40px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -503,4 +530,9 @@ footer i {
   border-radius: 15px;
   width: 200px;
   height: 200px;
+}
+.team .team-member i {
+  color: white;
+  font-size: 1.6rem;
+  margin: 0 10px;
 }

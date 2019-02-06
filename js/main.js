@@ -27,7 +27,7 @@ const teamImages = [
   "/images/brandon.jpg",
   "/images/sean.png",
   "/images/brandon.jpg",
-  "/images/brandon.jpg",
+  "/images/bhumi.png",
   "/images/brandon.jpg",
   "/images/jonathan.jpg"
 ];

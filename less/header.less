@@ -39,6 +39,32 @@ header.about {
     font-size: 1.4rem;
     padding: 0 30px;
   }
+
+  .cta-buttons {
+    margin-top: 20px;
+  }
+
+  .log-in-btn,
+  .sign-up-btn {
+    padding: 10px 30px;
+    margin: 20px;
+  }
+
+  .sign-up-btn {
+    background-color: @secondary-color;
+
+    &:hover {
+      background-color: white;
+      color: @secondary-color;
+    }
+  }
+
+  .log-in-btn {
+    &:hover {
+      background-color: white;
+      color: @secondary-color;
+    }
+  }
 }
 
 header.about {
@@ -53,4 +79,6 @@ header.about {
     url("../images/about-background.jpeg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/about-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
