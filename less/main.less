@@ -5,6 +5,10 @@ body {
   color: white;
 }
 
+.about-body {
+  background: linear-gradient(to left top, @primary-color, @secondary-color);
+}
+
 h1 {
   font-size: 3.6rem;
 }
@@ -25,4 +29,26 @@ h6 {
 
 p {
   font-size: 1.4rem;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  font-size: @text-small;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 20px;
+  min-width: 60%;
+  padding: 10px 0;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: lighten(@secondary-color, 5%);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
 }

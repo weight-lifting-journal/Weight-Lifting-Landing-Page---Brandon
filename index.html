@@ -32,7 +32,7 @@
         <a class="menu-icon"><i class="fas fa-bars"></i></a>
         <div class="nav-container">
           <div class="nav-container-content">
-            <a href="#" class="close-menu"><i class="fas fa-times"></i></a>
+            <a class="close-menu"><i class="fas fa-times"></i></a>
             <div class="nav-list">
               <a class="nav-link" id="homeBtn" href="#home">Home</a>
               <a class="nav-link" href="#">Log In</a>
@@ -42,30 +42,35 @@
                 >Testimonials</a
               >
               <a class="nav-link" id="contactBtn" href="#contact">Contact Us</a>
+              <a class="nav-link" href="/about.html">About Us</a>
             </div>
           </div>
         </div>
       </nav>
       <!--End navigation-->
       <!--Header-->
-      <header id="home">
+      <header class="home" id="home">
         <h1 class="js-wp-1">Fit Me</h1>
         <p class="js-wp-1">
           A smart workout tracking solution to fit your lifestyle.
         </p>
+        <div class="cta-buttons">
+          <a class="btn sign-up-btn" href="#">Sign Up!</a>
+          <a class="btn log-in-btn" href="#">Log In</a>
+        </div>
       </header>
       <!--End header-->
       <!--About Section-->
       <section class="about js-wp-2">
         <h2>What is Fit Me about?</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-          dolor quia asperiores earum, optio ducimus odit, sint dolore itaque et
-          maiores nostrum minus repudiandae omnis quod sit modi. Molestias,
-          dolores? Dolore odit quaerat vitae commodi ut. Optio itaque iste
-          maxime alias id possimus expedita nemo sed, quae quaerat, quas iure,
-          accusantium dolor quidem? Saepe labore, praesentium deserunt porro
-          nemo repellat.
+          Fit Me's goal is to reduce your time spent tracking and reflecting on
+          your personal progress in the gym. We do this by helping you chuck out
+          the old journal and pen. Our app allows you to create your own
+          workouts and record how much weight you lifted and the amount of reps
+          completed. On top of that you can upload your personal pictures to
+          keep a timeline of your progress. All of this combined provides for a
+          powerful experience and more accurate results with your fitness.
         </p>
       </section>
       <!--End about-->
@@ -81,10 +86,10 @@
               <h3>Save Time</h3>
             </div>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
-              minima dicta, quis cupiditate necessitatibus eaque nesciunt? Eum
-              eius velit harum consectetur laudantium dolorem tempora! Quidem
-              praesentium inventore earum eligendi ipsa?
+              Forget pausing after every set to write down how many reps and how
+              much weight you just accomplished only to lose your journal a week
+              later. You will be able to log your workout and have a digital
+              copy as fast as you can type a text message.
             </p>
           </div>
           <div class="feature even">
@@ -95,10 +100,9 @@
               <h3>Log Workouts</h3>
             </div>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
-              minima dicta, quis cupiditate necessitatibus eaque nesciunt? Eum
-              eius velit harum consectetur laudantium dolorem tempora! Quidem
-              praesentium inventore earum eligendi ipsa?
+              No more struggling to remember your workout! Add all of your
+              exercises and then input your data as you go. Workout logging is a
+              great way to share your program and accomplishments with others.
             </p>
           </div>
           <div class="feature">
@@ -109,10 +113,10 @@
               <h3>Add Exercises</h3>
             </div>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
-              minima dicta, quis cupiditate necessitatibus eaque nesciunt? Eum
-              eius velit harum consectetur laudantium dolorem tempora! Quidem
-              praesentium inventore earum eligendi ipsa?
+              No matter what kind of workouts you do, they can be added to the
+              log. Freely add exercises that you are trying out if you cannot
+              find them in the app. Afterwards, your exercise will be selectable
+              for all future workouts!
             </p>
           </div>
           <div class="feature even">
@@ -123,10 +127,10 @@
               <h3>Track Results</h3>
             </div>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
-              minima dicta, quis cupiditate necessitatibus eaque nesciunt? Eum
-              eius velit harum consectetur laudantium dolorem tempora! Quidem
-              praesentium inventore earum eligendi ipsa?
+              Keep up with your results by tracking how your numbers have
+              improved over time along with taking a look at your timeline of
+              progress photos. This helps you identify and correct any small
+              problems that you may not normally be aware of.
             </p>
           </div>
         </div>
@@ -138,25 +142,24 @@
         <div class="testimonial">
           <img src="./images/testimonial1.jpeg" alt="First testimonial" />
           <p>
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            cumque. Voluptates eveniet aliquam deleniti eligendi ut placeat
-            dicta mollitia!" -Sarah Jenkins
+            "With Fit Me, I have been able to really take a hold of my fitness.
+            I can clearly identify where I need to improve!" -Sarah Jenkins
           </p>
         </div>
         <div class="testimonial">
           <img src="./images/testimonial2.jpeg" alt="First testimonial" />
           <p>
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            cumque. Voluptates eveniet aliquam deleniti eligendi ut placeat
-            dicta mollitia!" -Sarah Jenkins
+            "It is great seeing how much my numbers have gone up over the past
+            year with Fit Me. I wouldn't recommend any other solution!" -Joe
+            Rogers
           </p>
         </div>
         <div class="testimonial last-child">
           <img src="./images/testimonial3.jpeg" alt="First testimonial" />
           <p>
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            cumque. Voluptates eveniet aliquam deleniti eligendi ut placeat
-            dicta mollitia!" -Sarah Jenkins
+            "I recommend Fit Me to all of my personal clients. It makes it so
+            easy for me to track their progress and recommend changes in their
+            routine!" -Lucy Myers
           </p>
         </div>
       </section>
@@ -177,7 +180,7 @@
             rows="10"
             class="contact-field contact-text"
           ></textarea>
-          <a href="#">Submit</a>
+          <a class="btn" href="#">Submit</a>
         </div>
       </section>
       <!--End contact-->

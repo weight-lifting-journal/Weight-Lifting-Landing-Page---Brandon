@@ -4,6 +4,9 @@ body {
   font-size: 62.5%;
   color: white;
 }
+.about-body {
+  background: linear-gradient(to left top, darkslateblue, #2e2f42);
+}
 h1 {
   font-size: 3.6rem;
 }
@@ -20,6 +23,26 @@ h6 {
 }
 p {
   font-size: 1.4rem;
+}
+.btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 20px;
+  min-width: 60%;
+  padding: 10px 0;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: #383a51;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .js-wp-1,
 .js-wp-2,
@@ -156,7 +179,8 @@ nav .logo {
   font-size: 1.6rem;
   margin-bottom: 15px;
 }
-header {
+header.home,
+header.about {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/header-background.jpeg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/header-background.jpeg");
@@ -177,16 +201,50 @@ header {
   -ms-flex-align: center;
   align-items: center;
 }
-header h1 {
+header.home h1,
+header.about h1 {
   font-family: "Caveat", cursive;
   font-size: 4.8rem;
   margin: 0;
   color: white;
 }
-header p {
+header.home p,
+header.about p {
   color: white;
   font-size: 1.4rem;
   padding: 0 30px;
+}
+header.home .cta-buttons,
+header.about .cta-buttons {
+  margin-top: 20px;
+}
+header.home .log-in-btn,
+header.about .log-in-btn,
+header.home .sign-up-btn,
+header.about .sign-up-btn {
+  padding: 10px 30px;
+  margin: 20px;
+}
+header.home .sign-up-btn,
+header.about .sign-up-btn {
+  background-color: #2e2f42;
+}
+header.home .sign-up-btn:hover,
+header.about .sign-up-btn:hover {
+  background-color: white;
+  color: #2e2f42;
+}
+header.home .log-in-btn:hover,
+header.about .log-in-btn:hover {
+  background-color: white;
+  color: #2e2f42;
+}
+header.about {
+  height: 50vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/about-background.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/about-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about {
   padding: 30px;
@@ -421,26 +479,6 @@ header p {
   -webkit-box-shadow: 0 0 0 1px #2e2f42;
   box-shadow: 0 0 0 1px #2e2f42;
 }
-.contact .contact-form a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.4rem;
-  border: 1px solid white;
-  border-radius: 5px;
-  margin-top: 20px;
-  min-width: 60%;
-  padding: 10px 0;
-  text-align: center;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.contact .contact-form a:hover {
-  background-color: #383a51;
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
 .contact .contact-form textarea {
   max-width: 95%;
 }
@@ -460,4 +498,41 @@ footer {
 }
 footer i {
   margin-right: 10px;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  padding: 0 2%;
+}
+.team .team-member {
+  margin: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.team .team-member h4 {
+  margin: 10px 0;
+}
+.team .team-member p {
+  font-family: "Caveat", cursive;
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.team .team-member .team-member-photo {
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+}
+.team .team-member i {
+  color: white;
+  font-size: 1.6rem;
+  margin: 0 10px;
 }

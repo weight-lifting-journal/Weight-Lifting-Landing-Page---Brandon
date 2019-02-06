@@ -1,0 +1,42 @@
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  padding: 0 2%;
+
+  .team-member {
+    margin: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    h4 {
+      margin: 10px 0;
+    }
+
+    p {
+      font-family: "Caveat", cursive;
+      font-size: @text-normal;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .team-member-photo {
+      -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+      border-radius: 15px;
+      width: 200px;
+      height: 200px;
+    }
+
+    i {
+      color: white;
+      font-size: @text-normal;
+      margin: 0 10px;
+    }
+  }
+}

@@ -1,19 +1,40 @@
 /*------------Modal Functionality------------*/
-const modal = document.querySelector(".nav-container");
-const modalBtn = document.querySelector(".menu-icon");
-const modalCloseBtn = document.querySelector(".close-menu");
-
-modalBtn.onclick = () => {
-  modal.style.display = "block";
+const modal = {
+  container: document.querySelector(".nav-container"),
+  btn: document.querySelector(".menu-icon"),
+  closeBtn: document.querySelector(".close-menu")
 };
 
-modalCloseBtn.onclick = e => {
+modal.btn.onclick = () => {
+  modal.container.style.display = "block";
+};
+
+modal.closeBtn.onclick = e => {
   e.preventDefault();
-  modal.style.display = "none";
+  modal.container.style.display = "none";
 };
 
 window.onclick = e => {
   if (e.target === modal) {
-    modal.style.display = "none";
+    modal.container.style.display = "none";
   }
 };
+
+/*------------About Team Functionality------------*/
+const teamImages = [
+  "/images/julianm.jpg",
+  "/images/brandon.jpg",
+  "/images/brandon.jpg",
+  "/images/sean.png",
+  "/images/brandon.jpg",
+  "/images/bhumi.png",
+  "/images/brandon.jpg",
+  "/images/jonathan.jpg"
+];
+const teamPhotos = document.querySelectorAll(".team-member-photo");
+
+teamPhotos.forEach((member, cur) => {
+  member.style.background = `url(${teamImages[cur]})`;
+  member.style.backgroundSize = "cover";
+  member.style.backgroundRepeat = "no-repeat";
+});
