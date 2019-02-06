@@ -156,7 +156,8 @@ nav .logo {
   font-size: 1.6rem;
   margin-bottom: 15px;
 }
-header {
+header.home,
+header.about {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/header-background.jpeg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/header-background.jpeg");
@@ -177,16 +178,23 @@ header {
   -ms-flex-align: center;
   align-items: center;
 }
-header h1 {
+header.home h1,
+header.about h1 {
   font-family: "Caveat", cursive;
   font-size: 4.8rem;
   margin: 0;
   color: white;
 }
-header p {
+header.home p,
+header.about p {
   color: white;
   font-size: 1.4rem;
   padding: 0 30px;
+}
+header.about {
+  height: 50vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/about-background.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/about-background.jpeg");
 }
 .about {
   padding: 30px;

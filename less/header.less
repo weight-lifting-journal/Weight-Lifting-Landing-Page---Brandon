@@ -1,4 +1,5 @@
-header {
+header.home,
+header.about {
   height: 100vh;
   background: -webkit-gradient(
       linear,
@@ -38,4 +39,18 @@ header {
     font-size: 1.4rem;
     padding: 0 30px;
   }
+}
+
+header.about {
+  height: 50vh;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.6)),
+      to(rgba(0, 0, 0, 0.6))
+    ),
+    url("../images/about-background.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/about-background.jpeg");
 }
