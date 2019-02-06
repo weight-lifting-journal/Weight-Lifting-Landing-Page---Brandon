@@ -4,9 +4,6 @@ const modal = {
   btn: document.querySelector(".menu-icon"),
   closeBtn: document.querySelector(".close-menu")
 };
-// const modal = document.querySelector(".nav-container");
-// const modalBtn = document.querySelector(".menu-icon");
-// const modalCloseBtn = document.querySelector(".close-menu");
 
 modal.btn.onclick = () => {
   modal.container.style.display = "block";
@@ -22,3 +19,22 @@ window.onclick = e => {
     modal.container.style.display = "none";
   }
 };
+
+/*------------About Team Functionality------------*/
+const teamImages = [
+  "/images/julianm.jpg",
+  "/images/brandon.jpg",
+  "/images/brandon.jpg",
+  "/images/sean.png",
+  "/images/brandon.jpg",
+  "/images/brandon.jpg",
+  "/images/brandon.jpg",
+  "/images/jonathan.jpg"
+];
+const teamPhotos = document.querySelectorAll(".team-member-photo");
+
+teamPhotos.forEach((member, cur) => {
+  member.style.background = `url(${teamImages[cur]})`;
+  member.style.backgroundSize = "cover";
+  member.style.backgroundRepeat = "no-repeat";
+});
