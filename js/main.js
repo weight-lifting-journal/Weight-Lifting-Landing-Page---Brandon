@@ -1,19 +1,24 @@
 /*------------Modal Functionality------------*/
-const modal = document.querySelector(".nav-container");
-const modalBtn = document.querySelector(".menu-icon");
-const modalCloseBtn = document.querySelector(".close-menu");
+const modal = {
+  container: document.querySelector(".nav-container"),
+  btn: document.querySelector(".menu-icon"),
+  closeBtn: document.querySelector(".close-menu")
+};
+// const modal = document.querySelector(".nav-container");
+// const modalBtn = document.querySelector(".menu-icon");
+// const modalCloseBtn = document.querySelector(".close-menu");
 
-modalBtn.onclick = () => {
-  modal.style.display = "block";
+modal.btn.onclick = () => {
+  modal.container.style.display = "block";
 };
 
-modalCloseBtn.onclick = e => {
+modal.closeBtn.onclick = e => {
   e.preventDefault();
-  modal.style.display = "none";
+  modal.container.style.display = "none";
 };
 
 window.onclick = e => {
   if (e.target === modal) {
-    modal.style.display = "none";
+    modal.container.style.display = "none";
   }
 };
