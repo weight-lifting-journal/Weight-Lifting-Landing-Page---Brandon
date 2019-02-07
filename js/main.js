@@ -24,11 +24,10 @@ window.onclick = e => {
 const teamImages = [
   "/images/julianm.jpg",
   "/images/brandon.jpg",
-  "/images/brandon.jpg",
+  "/images/ryan.jpg",
   "/images/sean.png",
-  "/images/brandon.jpg",
+  "/images/megan.jpg",
   "/images/bhumi.png",
-  "/images/brandon.jpg",
   "/images/jonathan.jpg"
 ];
 const teamPhotos = document.querySelectorAll(".team-member-photo");
